@@ -21,12 +21,46 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.purple,
       ),
       body: Center(
-        // child: Image(
-        //   // image: NetworkImage('https://images.unsplash.com/photo-1669703437202-e465b9acf89c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60'),
-        //   // image: AssetImage('Itachi.jpg'),
-        // )
-        // child: Image.asset('Itachi.jpg'),
-        child: Image.network('https://images.unsplash.com/photo-1669703437202-e465b9acf89c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60'),
+        /*
+        //Icon
+        child: Icon(
+          Icons.airport_shuttle,
+          color: Colors.lightBlue,
+          size: 50.0,
+        ),
+        */
+
+
+
+        /*
+        //Button
+        child: ElevatedButton(
+          onPressed: (){
+            print('Clicked Me Dammit');
+          },
+          child: Text(
+            'Imma Button',
+          ),
+        ),
+        */
+
+
+        //Icon Inside A Button
+        //  child: ElevatedButton.icon(
+        //    onPressed: () {},
+        //    icon: Icon(
+        //      Icons.mail
+        //    ),
+        //    label: Text('Mail Me'),
+        //  ),
+
+
+        child: IconButton(
+          onPressed: () {print("Clicked Me");},
+          icon: Icon(Icons.alternate_email),
+          color: Colors.amber,
+        ),
+
       ),
       floatingActionButton: FloatingActionButton(
         child: const Text(
