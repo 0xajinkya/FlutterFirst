@@ -21,24 +21,36 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.purple,
       ),
 
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        crossAxisAlignment: CrossAxisAlignment.center,
+      body: Row(
         children: <Widget>[
-          Text('Hello World'),
-
-          ElevatedButton(
-              onPressed: (){},
-              child: Text("Click")
+          Expanded(
+              child: Image.asset('Itachi.jpg'),
+            flex: 3,
           ),
-
-          Container(
-            color: Colors.cyan,
-            padding: EdgeInsets.all(30.0),
-            child: Text(
-                'Inside Container',
-            )
-          )
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.cyan,
+              child: Text('1'),
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.pinkAccent,
+              child: Text('2'),
+            ),
+          ),
+          Expanded(
+            flex: 3,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.amber,
+              child: Text('3'),
+            ),
+          ),
         ],
       ),
 
