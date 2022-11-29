@@ -21,7 +21,7 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.purple,
       ),
 
-      body: Row(
+      body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
@@ -35,7 +35,9 @@ class Home extends StatelessWidget {
           Container(
             color: Colors.cyan,
             padding: EdgeInsets.all(30.0),
-            child: Text('Inside Container')
+            child: Text(
+                'Inside Container',
+            )
           )
         ],
       ),
