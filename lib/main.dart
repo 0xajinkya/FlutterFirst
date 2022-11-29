@@ -20,18 +20,13 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.purple,
       ),
-      body: const Center(
-        child: Text(
-          'Hello Mommy',
-          style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-              backgroundColor: Colors.purple,
-              color: Colors.white,
-              letterSpacing: 2.0,
-              fontFamily: 'Nunito'
-          ),
-        ),
+      body: Center(
+        // child: Image(
+        //   // image: NetworkImage('https://images.unsplash.com/photo-1669703437202-e465b9acf89c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60'),
+        //   // image: AssetImage('Itachi.jpg'),
+        // )
+        // child: Image.asset('Itachi.jpg'),
+        child: Image.network('https://images.unsplash.com/photo-1669703437202-e465b9acf89c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60'),
       ),
       floatingActionButton: FloatingActionButton(
         child: const Text(
